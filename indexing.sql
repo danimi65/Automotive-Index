@@ -25,15 +25,15 @@ SELECT * FROM "car_models" WHERE "year" BETWEEN 2010 AND 2015; --126.332 ms
 SELECT * FROM "car_models" WHERE "year" = 2010; --68.814 ms
 
 --indexing
-CREATE INDEX "make_code_index"
-ON "car_models" ("make_code"); 
+-- CREATE INDEX "make_code_index"
+-- ON "car_models" ("make_code"); 
 
-CREATE INDEX "model_code_index"
-ON "car_models" ("model_code");
+-- CREATE INDEX "model_code_index"
+-- ON "car_models" ("model_code");
 
 
-CREATE INDEX "year_code_index"
-ON "car_models" ("year");
+-- CREATE INDEX "year_code_index"
+-- ON "car_models" ("year");
 
 
 SELECT DISTINCT "make_title" FROM "car_models" WHERE "make_code" = 'LAM';--2.065 ms
